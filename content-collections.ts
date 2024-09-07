@@ -1,6 +1,6 @@
 import { defineCollection, defineConfig } from "@content-collections/core";
 
-const posts = defineCollection({
+const tools = defineCollection({
   name: "tools",
   directory: "src/tools",
   include: "**/*.md",
@@ -13,5 +13,5 @@ const posts = defineCollection({
 });
 
 export default defineConfig({
-  collections: [posts],
+  collections: [tools],
 });
