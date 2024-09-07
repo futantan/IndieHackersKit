@@ -117,24 +117,29 @@ export function NavBar() {
                     </Link>
                   ))}
 
-                  <Link
-                    href={"https://github.com/futantan/IndieHackersKit"}
-                    target="_blank"
-                    className="block px-3 py-2 text-lg"
-                  >
-                    Submit
-                  </Link>
+                  <Button variant="dark" asChild>
+                    <Link
+                      href={"https://github.com/futantan/IndieHackersKit"}
+                      target="_blank"
+                      className="block px-3 py-2 text-lg"
+                    >
+                      Submit
+                    </Link>
+                  </Button>
                 </div>
               </SheetContent>
             </Sheet>
 
             {isClient && (
-              <Link
-                href={"https://github.com/futantan/IndieHackersKit"}
-                className="block px-3 py-2 text-lg"
-              >
-                Submit
-              </Link>
+              <Button variant="dark" asChild>
+                <Link
+                  href={"https://github.com/futantan/IndieHackersKit"}
+                  target="_blank"
+                  className="block px-3 py-2 text-lg"
+                >
+                  Submit
+                </Link>
+              </Button>
             )}
           </div>
         </div>
