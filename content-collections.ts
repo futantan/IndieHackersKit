@@ -1,14 +1,14 @@
 import { defineCollection, defineConfig } from "@content-collections/core";
 
 const posts = defineCollection({
-  name: "posts",
-  directory: "src/posts",
+  name: "tools",
+  directory: "src/tools",
   include: "**/*.md",
   schema: (z) => ({
     title: z.string(),
     icon: z.string(),
     summary: z.string(),
-    tag: z.array(z.string()),
+    tags: z.array(z.string()),
   }),
 });
 
