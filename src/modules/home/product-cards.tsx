@@ -1,103 +1,29 @@
 /* eslint-disable @next/next/no-img-element */
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-
-interface Product {
-  icon: string;
-  name: string;
-  description: string;
-  tag: string;
-}
-
-const products: Product[] = [
-  {
-    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
-    name: "Vercel",
-    description:
-      "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
-    tag: "Deployment",
-  },
-  {
-    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
-    name: "Vercel",
-    description:
-      "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
-    tag: "Deployment",
-  },
-  {
-    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
-    name: "Vercel",
-    description:
-      "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
-    tag: "Deployment",
-  },
-  {
-    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
-    name: "Vercel",
-    description:
-      "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
-    tag: "Deployment",
-  },
-  {
-    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
-    name: "Vercel",
-    description:
-      "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
-    tag: "Deployment",
-  },
-  {
-    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
-    name: "Vercel",
-    description:
-      "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
-    tag: "Deployment",
-  },
-  {
-    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
-    name: "Vercel",
-    description:
-      "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
-    tag: "Deployment",
-  },
-  {
-    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
-    name: "Vercel",
-    description:
-      "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
-    tag: "Deployment",
-  },
-  {
-    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
-    name: "Vercel",
-    description:
-      "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
-    tag: "Deployment",
-  },
-];
+import { allPosts } from "content-collections";
 
 export function ProductCards() {
   return (
     <section className="container max-w-4xl">
       <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-3">
-        {products.map((product, index) => (
+        {allPosts.map((post, index) => (
           <Card key={index} className="overflow-hidden bg-[#FAFAFA]">
             <CardContent className="p-5">
               <div className="mb-4 flex items-center space-x-4">
                 <img
-                  src={product.icon}
-                  alt={product.name}
+                  src="https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png"
+                  alt={post.title}
                   width={40}
                   height={40}
                   className="rounded-lg"
                 />
-                <h3 className="text-xl font-semibold">{product.name}</h3>
+                <h3 className="text-xl font-semibold">{post.title}</h3>
               </div>
-              <p className="mb-4 text-sm text-gray-600">
-                {product.description}
-              </p>
+              <p className="mb-4 text-sm text-gray-600">{post.summary}</p>
             </CardContent>
             <CardFooter className="px-6 py-3">
               <span className="rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-700">
-                {product.tag}
+                {post.tag.join(", ")}
               </span>
             </CardFooter>
           </Card>
