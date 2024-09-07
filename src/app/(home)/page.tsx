@@ -1,11 +1,11 @@
 import { Hero } from "@/modules/home/hero";
-import { ProductCards } from "@/modules/home/product-cards";
+import { ToolsList } from "@/modules/home/tools-list";
 
 export default async function Page() {
   return (
     <>
       <Hero />
-      <ProductCards />
+      <ToolsList />
     </>
   );
 }

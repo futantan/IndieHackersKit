@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { allTools } from "content-collections";
 
-export function ProductCards() {
+export function ToolsList() {
   return (
     <section className="container max-w-[900px]">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
