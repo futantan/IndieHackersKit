@@ -1,7 +1,5 @@
 import { HeroCentered } from "@/components/hero/hero-centered";
-import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/siteConfig";
-import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -13,7 +11,7 @@ export const Hero = () => {
           description={siteConfig.appDescription}
         />
       </div>
-      <div className="flex justify-center gap-x-6">
+      {/* <div className="flex justify-center gap-x-6">
         <Button className="font-bold" variant="default" size="lg" asChild>
           <Link href="/login">Get Started</Link>
         </Button>
@@ -21,7 +19,7 @@ export const Hero = () => {
         <Button className="font-bold" variant="outline" size="lg" asChild>
           <Link href="/login">Learn more</Link>
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 };
