@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import Image from "next/image";
 
 interface Product {
   icon: string;
@@ -10,63 +10,63 @@ interface Product {
 
 const products: Product[] = [
   {
-    icon: "/icons/vercel.png",
+    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
     name: "Vercel",
     description:
       "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
     tag: "Deployment",
   },
   {
-    icon: "/icons/vercel.png",
+    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
     name: "Vercel",
     description:
       "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
     tag: "Deployment",
   },
   {
-    icon: "/icons/vercel.png",
+    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
     name: "Vercel",
     description:
       "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
     tag: "Deployment",
   },
   {
-    icon: "/icons/vercel.png",
+    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
     name: "Vercel",
     description:
       "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
     tag: "Deployment",
   },
   {
-    icon: "/icons/vercel.png",
+    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
     name: "Vercel",
     description:
       "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
     tag: "Deployment",
   },
   {
-    icon: "/icons/vercel.png",
+    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
     name: "Vercel",
     description:
       "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
     tag: "Deployment",
   },
   {
-    icon: "/icons/vercel.png",
+    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
     name: "Vercel",
     description:
       "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
     tag: "Deployment",
   },
   {
-    icon: "/icons/vercel.png",
+    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
     name: "Vercel",
     description:
       "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
     tag: "Deployment",
   },
   {
-    icon: "/icons/vercel.png",
+    icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png",
     name: "Vercel",
     description:
       "Vercel is a cloud platform for building modern web applications. It provides a comprehensive set of tools for building, deploying, and scaling web applications.",
@@ -82,7 +82,7 @@ export function ProductCards() {
           <Card key={index} className="overflow-hidden bg-[#FAFAFA]">
             <CardContent className="p-5">
               <div className="mb-4 flex items-center space-x-4">
-                <Image
+                <img
                   src={product.icon}
                   alt={product.name}
                   width={40}
