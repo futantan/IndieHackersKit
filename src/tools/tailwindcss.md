@@ -1,7 +1,7 @@
 ---
 title: "TailwindCSS"
 summary: "TailwindCSS 是目前最流行的 CSS 框架"
-icon: "https://tailwindcss.com/img/logos/tailwindcss-mark.svg"
+icon: "https://tailwindcss.com/favicons/apple-touch-icon.png"
 url: "https://tailwindcss.com/"
 tags: ["CSS"]
 ---
