@@ -10,13 +10,13 @@ export function ToolsList() {
         {allTools.map((tool, index) => (
           <Card
             key={index}
-            className="cursor-pointer rounded-md border-gray-300 bg-[#FAFAFA] shadow-none hover:bg-gray-100"
+            className="flex cursor-pointer flex-col rounded-md border-gray-300 bg-[#FAFAFA] shadow-none hover:bg-gray-100"
           >
-            <CardContent className="p-5">
+            <CardContent className="grow p-5">
               <div className="mb-4 flex items-center space-x-4">
                 <div className="h-9 w-9 rounded-md border border-gray-300 bg-white p-1">
                   <img
-                    src="https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/180x180.png"
+                    src={tool.icon}
                     alt={tool.title}
                     width={28}
                     height={28}
