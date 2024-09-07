@@ -7,6 +7,7 @@ const tools = defineCollection({
   schema: (z) => ({
     title: z.string(),
     icon: z.string(),
+    url: z.string(),
     summary: z.string(),
     tags: z.array(z.string()),
   }),

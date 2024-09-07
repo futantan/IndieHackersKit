@@ -2,6 +2,7 @@
 title: "NextAuth"
 summary: "开源、自托管的用户登录解决方案"
 icon: "https://authjs.dev/img/etc/logo-sm.webp"
+url: "https://authjs.dev/"
 tags: ["Auth"]
 ---
 
